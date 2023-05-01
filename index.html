@@ -46,6 +46,16 @@
         object-fit: cover;
         transition: all 0.5s ease-in-out;
       }
+      article img:hover {
+        cursor: pointer;
+      }
+      article .icon-view {
+        position: absolute;
+        display: flex;
+        width: 5vw;
+        justify-content: center;
+        align-items: center;
+      }
       article h1 {
         font-family: 'Outfit', sans-serif;
         font-weight: 600;
@@ -175,6 +185,7 @@
       }
       @media (max-width: 380px) {
         article {
+          width: 95%;
           height: 65%;
         }
       }
