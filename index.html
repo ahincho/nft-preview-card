@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <!-- Frontend Mentor Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Title of the Web Page -->
+    <title>Frontend Mentor | NFT preview card component</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { 
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+        color: white;
+      }
+      .attribution a { color: orange; }
+      body {
+        background-color: hsl(217, 54%, 11%);
+      }
+      main {
+        display: flex;
+        height: 90vh;
+        justify-content: center;
+        align-items: center;
+      }
+      article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 22.5%;
+        height: 82.5%;
+        padding: 20px 25px;
+        background-color: hsl(216, 50%, 16%);
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px hsl(215, 32%, 27%);
+      }
+      article img {
+        width: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+      article h1 {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        color: white;
+        margin: 20px 0px;
+      }
+      article p {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 300;
+        color: hsl(215, 51%, 70%);
+        font-size: 20px;
+        margin: 0px;
+      }
+      article section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0px;
+      }
+      article section strong {
+        display: flex;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        align-self: left;
+        color: hsl(178, 100%, 50%);
+      }
+      article section p {
+        display: flex;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: hsl(215, 51%, 70%);
+      }
+      article section .ethereum {
+        height: 23px;
+        width: 15px;
+        padding-right: 10px;
+        background-size: cover;
+      }
+      article section .clock {
+        height: 23px;
+        width: 23px;
+        padding-right: 10px;
+        background-size: cover;
+      }
+      article hr {
+        border: 1px solid rgba(139, 172, 218, 0.25);
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+      article footer {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 15px 0px;
+      }
+      article footer img {
+        height: 40px;
+        width: 40px;
+        border: 1px solid white;
+        border-radius: 50%;
+        background-size: cover;
+        margin-right: 15px;
+      }
+      article footer span {
+        color: white;
+      }
+      @media (max-width: 1660px) {
+        article {
+          width: 30%;
+          height: 85%;
+        }
+      }
+      @media (max-width: 1440px) {
+        article {
+          width: 30%;
+          height: 80%;
+        }
+      }
+      @media (max-width: 1200px) {
+        article {
+          width: 35%;
+          height: 75%;
+        }
+      }
+      @media (max-width: 960px) {
+        article {
+          width: 40%;
+          height: 70%;
+        }
+      }
+      @media (max-width: 800px) {
+        article {
+          width: 50%;
+          height: 75%;
+        }
+      }
+      @media (max-width: 680px) {
+        article {
+          width: 60%;
+          height: 75%;
+        }
+      }
+      @media (max-width: 480px) {
+        article {
+          width: 80%;
+          height: 75%;
+        }
+      }
+      @media (max-width: 380px) {
+        article {
+          height: 65%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <img src="./images/image-equilibrium.jpg" alt="image-equilibrium">
+        <h1>Equilibrium #3429</h1>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <section>
+          <strong>
+            <img src="./images/icon-ethereum.svg" alt="ethereum-icon" class="ethereum">
+            0.041 ETH
+          </strong>
+          <p>
+            <img src="./images/icon-clock.svg" alt="clock-icon" class="clock">
+            3 days left
+          </p>
+        </section>
+        <hr>
+        <footer>
+          <img src="./images/image-avatar.png" alt="avatar-jules-wyvern">
+          <p>Creation of <span>Jules Wyvern</span></p>
+        </footer>
+      </article>
+    </main>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.linkedin.com/in/angel-hincho-jove/">Angel Hincho Jove</a>.
+    </div>
+  </body>
+</html>
