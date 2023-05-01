@@ -42,8 +42,9 @@
       }
       article img {
         width: 100%;
-        border-radius: 20px;
+        border-radius: 20px;  
         object-fit: cover;
+        transition: all 0.5s ease-in-out;
       }
       article h1 {
         font-family: 'Outfit', sans-serif;
@@ -51,6 +52,11 @@
         font-size: 24px;
         color: white;
         margin: 20px 0px;
+        transition: all 0.5s ease-in-out;
+      }
+      article h1:hover {
+        cursor: pointer;
+        color: hsl(178, 100%, 50%);
       }
       article p {
         font-family: 'Outfit', sans-serif;
@@ -113,6 +119,11 @@
       }
       article footer span {
         color: white;
+        transition: all 0.5s ease-in-out;
+      }
+      article footer span:hover {
+        cursor: pointer;
+        color: hsl(178, 100%, 50%);
       }
       @media (max-width: 1660px) {
         article {
@@ -129,25 +140,25 @@
       @media (max-width: 1200px) {
         article {
           width: 35%;
-          height: 75%;
+          height: 80%;
         }
       }
       @media (max-width: 960px) {
         article {
           width: 40%;
-          height: 70%;
+          height: 75%;
         }
       }
       @media (max-width: 800px) {
         article {
           width: 50%;
-          height: 75%;
+          height: 80%;
         }
       }
       @media (max-width: 680px) {
         article {
           width: 60%;
-          height: 75%;
+          height: 80%;
         }
       }
       @media (max-width: 480px) {
